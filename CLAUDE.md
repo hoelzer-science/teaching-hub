@@ -25,11 +25,20 @@ belongs on the individual course sites, behind their password.
 Three repositories, all Quarto + Cloudflare Pages:
 
 ```
-teaching-hub          public    this repo — the front door          teaching.hoelzer.science
-teaching-template     public    reusable course skeleton (OER)      teaching-template.hoelzer.science (401)
-<module>              private   actual courses, e.g. bioinformatics <module>.hoelzer.science (401)
-<shared-prerequisite> public    material every module needs         (planned)
+teaching-hub          public    this repo — the front door       teaching.hoelzer.science
+teaching-template     public    reusable course skeleton (OER)   teaching-template.hoelzer.science (401)
+course-<module>       private   actual courses                   course-<module>.hoelzer.science (401)
+<shared-prerequisite> public    material every module needs      (planned, e.g. linux.hoelzer.science)
 ```
+
+**Naming rule.** The `course-` prefix marks a password-protected enrolled
+module; everything public takes a bare label. Repo name, Pages project name and
+subdomain label are always identical, so there is nothing to map. The domain's
+first-level labels are a scarce permanent namespace reserved for durable
+identities — a future research group should be able to have plain
+`bioinformatics`. Nesting under `teaching.` is not possible on the free tier:
+Universal SSL covers the apex and `*.hoelzer.science` but not
+`*.teaching.hoelzer.science`, so everything lives one level deep.
 
 The fourth kind exists because the first three have **no channel for sharing content**:
 cherry-pick sync is infrastructure only, so anything copied per module drifts. Material that
