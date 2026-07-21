@@ -25,10 +25,16 @@ belongs on the individual course sites, behind their password.
 Three repositories, all Quarto + Cloudflare Pages:
 
 ```
-teaching-hub        public    this repo — the front door        teaching.hoelzer.science
-teaching-template   public    reusable course skeleton (OER)    teaching-template.hoelzer.science (401)
-<module>            private   actual courses, e.g. bioinformatics   <module>.hoelzer.science (401)
+teaching-hub          public    this repo — the front door          teaching.hoelzer.science
+teaching-template     public    reusable course skeleton (OER)      teaching-template.hoelzer.science (401)
+<module>              private   actual courses, e.g. bioinformatics <module>.hoelzer.science (401)
+<shared-prerequisite> public    material every module needs         (planned)
 ```
+
+The fourth kind exists because the first three have **no channel for sharing content**:
+cherry-pick sync is infrastructure only, so anything copied per module drifts. Material that
+every module needs and none owns — the first is a Linux/bash crash course — gets its own
+public repo and site, linked from each module and from `resources.qmd` here.
 
 The hub is the only one of the three that is meant to be **read by the public**.
 It has no auth worker, no pixi environment, and no LMS build — deliberately.
