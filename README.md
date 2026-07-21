@@ -22,24 +22,24 @@ quarto render         # build into _site/
 CI renders, checks links, and deploys to Cloudflare Pages on every push to
 `main`. Unlike the course sites there is **no auth worker** — the hub is public.
 
-One-time setup (see the template's README for the detailed Cloudflare walkthrough):
+Setup is done. For reference (see the template's README for the detailed
+Cloudflare walkthrough):
 
-1. Create the Pages project: `wrangler pages project create teaching-hub --production-branch=main`
-2. GitHub repository → Settings → Secrets and variables → Actions:
-   - secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
-   - variable: `CLOUDFLARE_PROJECT_NAME` (e.g. `teaching-hub`)
-3. Add the custom domain `teaching.hoelzer.science` from the Pages project's
-   Custom domains tab (do not create the DNS record by hand).
+- Pages project name is **`teaching`** — `teaching.pages.dev` was already taken,
+  so the default subdomain is `teaching-62z.pages.dev`.
+- GitHub repository → Settings → Secrets and variables → Actions:
+  - secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
+  - variable: `CLOUDFLARE_PROJECT_NAME` = `teaching`
+- The custom domain was added from the Pages project's Custom domains tab.
+  Never create the DNS record by hand.
 
 The API token and account ID are the same as for the course projects.
 
-## Before sharing widely
+## Publishing constraint
 
-- `philosophy.qmd` and `resources.qmd` carry author notes (HTML comments) —
-  personalise before publicising.
-- `contact.qmd` uses a personal email; consider an institutional address.
-- Course links point at `*.hoelzer.science`; planned courses are listed
-  without links until their sites exist.
+Public files here must not name an institution, a module code, a term, or a
+scheduled course. Only courses actually in preparation are listed, and without
+dates or links. See `CLAUDE.md`.
 
 ## Relation to the other repos
 

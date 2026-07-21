@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: _site
+  # Render ONLY .qmd. Loose .md in the project root -- CLAUDE.md, NEXT.md,
+  # docs/sessions/* -- are working notes, and a website project would otherwise
+  # turn them into public pages. NEXT.md did exactly that before this was added.
+  render:
+    - "*.qmd"
 
 lang: en
 
