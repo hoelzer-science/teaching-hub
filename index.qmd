@@ -1,0 +1,31 @@
+---
+title: "Teaching"
+toc: false
+---
+
+Open, reproducible teaching material in bioinformatics and digital health.
+
+I build courses as **web-first, version-controlled infrastructure**: slides,
+notes and practicals from one source, published continuously, easy to maintain
+and update. This page collects that work and explains the approach behind it.
+
+## Courses
+
+::: {.course-list}
+- **Bioinformatics**<br>
+  <span class="status">In preparation</span><br>
+  Sequence analysis, alignment, databases and hands-on practicals.
+:::
+
+::: {.callout-note}
+Once a course runs, its site is password-protected and the login is distributed
+to enrolled students directly.
+:::
+
+## More
+
+- [Teaching philosophy](philosophy.qmd) — how these courses are designed and why
+- [Infrastructure](infrastructure.qmd) — the open stack behind them
+- [Resources](resources.qmd) — reusable, openly licensed material
+- [FAQ](faq.qmd)
+- [Contact](contact.qmd)

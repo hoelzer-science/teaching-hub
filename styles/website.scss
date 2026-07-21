@@ -1,0 +1,40 @@
+/*-- scss:defaults --*/
+
+// Shared with the course template so the hub and the modules read as one
+// family. Keep the two in sync when the palette changes.
+$link-color: #0b6e99 !default;
+$body-color: #1a1a1a !default;
+
+/*-- scss:rules --*/
+
+main {
+  max-width: 62rem;
+}
+
+.cell-output,
+table {
+  overflow-x: auto;
+  display: block;
+  max-width: 100%;
+}
+
+// Course cards on the landing page.
+.course-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.course-list li {
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 0.4rem;
+}
+
+.course-list .status {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #6c757d;
+}

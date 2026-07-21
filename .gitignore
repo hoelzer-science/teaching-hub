@@ -1,0 +1,16 @@
+# Generated output
+_site/
+.quarto/
+*_files/
+_freeze/
+
+# Tooling caches (wrangler stores the Cloudflare account ID)
+.wrangler/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+/.quarto/
+**/*.quarto_ipynb

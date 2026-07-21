@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: _site
+
+lang: en
+
+website:
+  title: "Teaching"
+  description: "Courses, philosophy and open teaching infrastructure — Martin Hölzer"
+  site-url: "https://teaching.hoelzer.science"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: philosophy.qmd
+        text: Philosophy
+      - href: infrastructure.qmd
+        text: Infrastructure
+      - href: resources.qmd
+        text: Resources
+      - href: faq.qmd
+        text: FAQ
+      - href: contact.qmd
+        text: Contact
+  page-footer:
+    center: >-
+      © 2026 Martin Hölzer ·
+      content [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles/website.scss
+    toc: true
+    toc-depth: 2
+    code-copy: true

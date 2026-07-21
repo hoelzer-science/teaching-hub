@@ -1,0 +1,36 @@
+---
+title: "FAQ"
+---
+
+## Why are the slides HTML and not PDF?
+
+HTML slides are searchable, work on any device, can hold live code and be
+corrected centrally. If you want a PDF you can export one yourself from any deck
+in a few clicks — see the course guide on your course site.
+
+## How do I get into a course site?
+
+Course sites are password-protected. The login is announced to enrolled students
+through the course's own channels. There is one shared login per course.
+
+## I am not enrolled — can I see the material?
+
+The course sites are for enrolled students. The [teaching philosophy](philosophy.qmd)
+and [infrastructure](infrastructure.qmd) are public here, and openly licensed
+material is collected under [Resources](resources.qmd).
+
+## Can I reuse your material?
+
+Yes, within the licenses: content under CC BY-SA 4.0, code under MIT, with
+attribution. Some figures come from third parties and are not mine to relicense
+— those are marked where they appear.
+
+## What software do the practicals use?
+
+Open, reproducible environments (Python and bioconda tools, pinned with pixi).
+Everything needed is specified per course; nothing proprietary is required.
+
+## I found a mistake or a broken link.
+
+Please tell me — see [Contact](contact.qmd). Corrections go live for everyone at
+once.

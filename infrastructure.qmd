@@ -1,0 +1,41 @@
+---
+title: "Infrastructure"
+---
+
+The courses run on an open, reproducible stack. This page explains it, both for
+the curious and for other educators who might want to reuse it.
+
+## The stack
+
+| Piece | Tool | Why |
+|---|---|---|
+| Source | Markdown + [Quarto](https://quarto.org) | one source → slides, notes, website |
+| Slides | reveal.js (HTML) | interactive, code-aware, self-exportable to PDF |
+| Version control | Git + GitHub | history, backup, reproducibility |
+| Environments | [pixi](https://pixi.sh) (conda/bioconda) | identical, pinned, long-lived |
+| Validation | GitHub Actions | every change must render and its code must run |
+| Hosting | Cloudflare Pages | fast, free, password-protected per course |
+
+## How it fits together
+
+Writing content and pushing to GitHub triggers automated checks — the site
+renders, code examples execute, practical tests run, internal links resolve, and
+nothing that should stay private reaches the public build. Only then is the site
+deployed. What is published is therefore always reproducible from source.
+
+Course material is released **incrementally**: a session appears in the week it
+is taught. Each course site is protected by a shared password distributed to
+enrolled participants, so material stays with the people taking the course.
+
+## Open template
+
+The infrastructure itself — everything not specific to a single course — is
+openly licensed and available as a template:
+
+- [**teaching-template**](https://github.com/hoelzer-science/teaching-template)
+  — the reusable course skeleton (MIT for code, CC BY-SA 4.0 for content)
+
+Individual course repositories are kept private, because teaching material may
+include third-party figures that are permitted for enrolled students but not for
+open publication. The template carries no such content, so it can be shared
+freely.

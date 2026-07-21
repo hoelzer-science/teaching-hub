@@ -1,0 +1,22 @@
+---
+title: "Resources"
+---
+
+## Open educational resources
+
+Teaching material here is openly licensed so it can be reused with attribution:
+
+- **Slides, notes, exercises** — [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Code, scripts, infrastructure** — [MIT](https://opensource.org/licenses/MIT)
+
+## Reusable infrastructure
+
+- [**teaching-template**](https://github.com/hoelzer-science/teaching-template)
+  — the course skeleton behind these modules, for anyone building their own.
+  See [Infrastructure](infrastructure.qmd) for how it works.
+
+## Course material
+
+Openly shareable figures, datasets and decks will be collected here as the
+courses develop. Course-specific material stays on the individual course sites,
+available to enrolled students.

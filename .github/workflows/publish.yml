@@ -1,0 +1,70 @@
+name: publish
+
+# Public hub: validate and deploy on every push to main. There is no password
+# worker and no staged release -- everything here is meant to be public, so
+# main deploys continuously.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render site
+        run: quarto render
+
+      - name: Check internal links
+        run: ./check-links.sh _site
+
+      - name: Upload rendered site
+        uses: actions/upload-artifact@v7
+        with:
+          name: site
+          path: _site/
+          retention-days: 14
+
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download validated site
+        uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: _site
+
+      - name: Check deploy configuration
+        env:
+          PROJECT: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          missing=""
+          [ -n "$PROJECT" ] || missing="$missing vars.CLOUDFLARE_PROJECT_NAME"
+          [ -n "$TOKEN" ]   || missing="$missing secrets.CLOUDFLARE_API_TOKEN"
+          [ -n "$ACCOUNT" ] || missing="$missing secrets.CLOUDFLARE_ACCOUNT_ID"
+          if [ -n "$missing" ]; then
+            echo "::error::Missing repository configuration:$missing"
+            exit 1
+          fi
+          echo "OK: deploy configuration present"
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: >-
+            pages deploy _site
+            --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}
+            --branch=main
