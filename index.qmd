@@ -3,7 +3,7 @@ title: "Teaching"
 toc: false
 ---
 
-Open, reproducible teaching material in bioinformatics and digital health.
+Open, reproducible teaching material in bioinformatics and data science.
 
 I build courses as **web-first, version-controlled infrastructure**: slides,
 notes and practicals from one source, published continuously, easy to maintain
