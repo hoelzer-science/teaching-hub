@@ -17,6 +17,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: About
       - href: philosophy.qmd
         text: Philosophy
       - href: infrastructure.qmd

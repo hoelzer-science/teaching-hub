@@ -24,6 +24,7 @@ to enrolled students directly.
 
 ## More
 
+- [About](about.qmd) — who teaches these courses
 - [Teaching philosophy](philosophy.qmd) — how these courses are designed and why
 - [Infrastructure](infrastructure.qmd) — the open stack behind them
 - [Resources](resources.qmd) — reusable, openly licensed material
