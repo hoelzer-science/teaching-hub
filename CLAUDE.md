@@ -28,7 +28,7 @@ Three repositories, all Quarto + Cloudflare Pages:
 teaching-hub          public    this repo — the front door       teaching.hoelzer.science
 teaching-template     public    reusable course skeleton (OER)   teaching-template.hoelzer.science (401)
 course-<module>       private   actual courses                   course-<module>.hoelzer.science (401)
-<shared-prerequisite> public    material every module needs      (planned, e.g. linux.hoelzer.science)
+<shared-prerequisite> public    material every module needs      first instance: linux.hoelzer.science (live)
 ```
 
 **Naming rule.** The `course-` prefix marks a password-protected enrolled
