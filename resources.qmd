@@ -15,6 +15,13 @@ Teaching material here is openly licensed so it can be reused with attribution:
   — the course skeleton behind these modules, for anyone building their own.
   See [Infrastructure](infrastructure.qmd) for how it works.
 
+## Prerequisite material
+
+- [**Linux Crash Course**](https://linux.hoelzer.science) — the command line,
+  package management and Git: the working baseline every practical assumes.
+  Public and free-standing rather than tied to one module, so it is equally
+  useful before you enrol anywhere.
+
 ## Course material
 
 Openly shareable figures, datasets and decks will be collected here as the
