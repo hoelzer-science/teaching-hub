@@ -17,6 +17,13 @@ and update. This page collects that work and explains the approach behind it.
   Sequence analysis, alignment, databases and hands-on practicals.
 :::
 
+::: {.callout-tip}
+Every course's practicals assume basic command-line competence. The
+[Linux Crash Course](https://linux.hoelzer.science) covers it — public and
+free-standing rather than tied to one course, so it is worth starting before
+you are even enrolled.
+:::
+
 ::: {.callout-note}
 Once a course runs, its site is password-protected and the login is distributed
 to enrolled students directly.
