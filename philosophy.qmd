@@ -26,6 +26,10 @@ Bioinformatics and data science are practical disciplines. Students work with th
 
 Modern AI tools are becoming part of scientific practice, so they also belong in the classroom. They can help explain code, explore ideas, or summarise information, but assessment focuses on understanding, reasoning, and reproducibility rather than generating polished output.
 
+That expectation would be hard to defend if it only ran one way, so to be explicit: **this teaching material is built with the help of AI coding agents.** They draft, structure and build; I decide what is taught, and I check every factual claim against the primary source. Nothing reaches a student because a model asserted it.
+
+There are two reasons to say so. Transparency is the obvious one. The other is that agentic coding is now part of how technical work actually gets done, and a course that touches AI should be willing to show its own workings rather than only discuss the topic. [How that works in practice](infrastructure.qmd#ai-in-the-build), including what it is deliberately not used for, is on the infrastructure page.
+
 ## Sustainable by design
 
 Well-designed teaching infrastructure should disappear into the background. By investing in maintainable tools and automation, I can spend less time managing files and more time improving content, supporting students, and keeping courses current.

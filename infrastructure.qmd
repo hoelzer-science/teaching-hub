@@ -27,6 +27,42 @@ Course material is released **incrementally**: a session appears in the week it
 is taught. Each course site is protected by a shared password distributed to
 enrolled participants, so material stays with the people taking the course.
 
+## AI in the build
+
+This material is drafted and built with the help of AI coding agents. That is
+worth stating plainly rather than leaving to inference — and worth describing
+precisely, because "AI was used" covers everything from a spell check to writing
+the syllabus.
+
+**What the agents do here:** draft prose and structure it, write the scripts that
+generate figures, write the tests that check the practical exercises, build and
+maintain the tooling above, and check the material against itself — that a
+cross-reference to another session says what that session actually says, that
+every link resolves, that nothing private reaches the public build.
+
+**What they do not do:** decide what is taught, or vouch for a fact. The
+curriculum follows the module description and my own judgement. Every domain
+claim — how a tool behaves, what an algorithm does, what a database actually
+contains — is checked by me against the primary source before it reaches a
+student. I am the domain check, and that is not a formality: it regularly
+catches things.
+
+**The material is written so that being wrong is noisy.** This matters more than
+any assurance about the drafting. Code examples on the site are executed on a
+clean machine every time it is built, so a command that does not run cannot ship.
+Figures are produced by scripts that assert the claim the figure is making, so
+changing the input fails loudly instead of quietly contradicting the caption.
+Accessions and database identifiers are verified against the public APIs rather
+than recalled from memory. Where a claim can be checked mechanically, it is
+written so that it is.
+
+**The limit is known, and it is the interesting part.** The claims that go wrong
+are reliably the ones no script can test: advice about a graphical interface, a
+remembered measurement, a confident generalisation drawn from a correct example.
+Those get flagged and verified by hand. Telling the two kinds of sentence apart
+turns out to be most of the work — which is also, not coincidentally, one of the
+things these courses try to teach.
+
 ## Open template
 
 The infrastructure itself — everything not specific to a single course — is
