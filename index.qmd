@@ -12,8 +12,8 @@ and update. This page collects that work and explains the approach behind it.
 ## Courses
 
 ::: {.course-list}
-- **Bioinformatics**<br>
-  <span class="status">In preparation</span><br>
+- **[Bioinformatics](https://course-bioinformatics.hoelzer.science)**<br>
+  <span class="status">Winter 2026/27 · first run</span><br>
   Sequence analysis, alignment, databases and hands-on practicals.
 :::
 
@@ -25,8 +25,8 @@ you are even enrolled.
 :::
 
 ::: {.callout-note}
-Once a course runs, its site is password-protected and the login is distributed
-to enrolled students directly.
+Course sites are password-protected, so the links above will ask for a login.
+It is distributed to enrolled students directly.
 :::
 
 ## More

@@ -111,11 +111,23 @@ npx wrangler pages deployment list --project-name=teaching
 
 ## Known constraints
 
-- **Publishing constraint (important).** Public files here must not name an
-  institution, a module code, a term, or a scheduled course. Only courses
-  actually in preparation are listed, without dates or links. If a change would
-  add any of these, stop and ask first. This applies to `NEXT.md` and session
-  notes too, which is why they are gitignored.
+- **Publishing constraint — NARROWED 2026-08-24, read the whole entry.** The
+  original rule barred institutions, module codes, **terms** and **links to
+  scheduled courses** alike. Its stated reason was that Martin had not signed
+  his contract; **he signed on 2026-08-22**, so that half has expired. Terms
+  (*Winter 2026/27*) and links to password-protected course sites are fine now,
+  and `index.qmd` uses both.
+  **What still holds, for a reason that does not expire: do not name an
+  institution or a module code.** That is not leftover caution — it is the
+  employer-agnostic framing under "Important architectural decisions", chosen so
+  the hub survives a change of employer without a rewrite. Martin reaffirmed
+  exactly this split on 2026-08-24. **If a change would name an employer, stop
+  and ask first.**
+  The lesson worth keeping: **a rule whose reason has expired is still obeyed by
+  whoever reads it next.** This one outlived its premise and was only caught
+  because it said "ask first" and someone did. When a constraint is written
+  down, write its reason beside it — and when the reason changes, the rule is
+  part of what changes.
 - **`_quarto.yml` renders only `*.qmd`.** A website project otherwise turns
   every loose `.md` in the project into a public page — `NEXT.md` became
   `_site/NEXT.html` before this was pinned down. Do not widen the `render:` list
