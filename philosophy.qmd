@@ -6,7 +6,7 @@ title: "Teaching philosophy"
 
 I believe students learn best by actively solving problems rather than passively consuming information. Lectures provide the foundations, but understanding develops through writing code, analysing data, discussing results, and reflecting on what worked—and what did not.
 
-![Teaching as a cycle: act on a theory of action, reflect on the behaviour and consequences it produced, revise the theory, and apply it again.](images/teaching-model.svg){#fig-teaching-model fig-alt="A circular diagram of four stages connected in a loop: Act (theory of action), Reflect (assess behaviour and consequences), Revise (conceptualize theory), and Apply (implement revised theory), around a central illustration of a brain full of gears connected to a lit light bulb." width="70%"}
+![Teaching as a cycle: act on a theory of action, reflect on the behaviour and consequences it produced, revise the theory, and apply it again. Own figure, after the experiential learning cycle in Kolb, D. A., *Experiential Learning: Experience as the Source of Learning and Development*, 2nd ed., Pearson FT Press, 2014.](images/teaching-model.svg){#fig-teaching-model fig-alt="A circular diagram of four stages connected in a loop: Act (theory of action), Reflect (assess behaviour and consequences), Revise (conceptualize theory), and Apply (implement revised theory), around a central illustration of a brain full of gears connected to a lit light bulb." width="70%"}
 
 The same cycle applies to the courses themselves. Each run is an experiment: what students struggle with feeds back into the material, and because everything is under version control, those revisions accumulate instead of being lost between semesters.
 
