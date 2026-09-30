@@ -117,12 +117,18 @@ npx wrangler pages deployment list --project-name=teaching
   his contract; **he signed on 2026-08-22**, so that half has expired. Terms
   (*Winter 2026/27*) and links to password-protected course sites are fine now,
   and `index.qmd` uses both.
-  **What still holds, for a reason that does not expire: do not name an
-  institution or a module code.** That is not leftover caution — it is the
-  employer-agnostic framing under "Important architectural decisions", chosen so
-  the hub survives a change of employer without a rewrite. Martin reaffirmed
-  exactly this split on 2026-08-24. **If a change would name an employer, stop
-  and ask first.**
+  **What still holds, for a reason that does not expire: do not frame the
+  courses by institution, and do not name a module code.** That is not leftover
+  caution — it is the employer-agnostic framing under "Important architectural
+  decisions", chosen so the hub survives a change of employer without a rewrite.
+  Martin reaffirmed exactly this split on 2026-08-24.
+  **NARROWED AGAIN 2026-09-30: the About page may name employers.** It always
+  named the RKI; on 2026-09-30 Martin approved adding his interim professorship
+  at the Ernst-Abbe-Hochschule Jena (contract signed, RKI approval for winter
+  semester 2026/27). A bio naming where its author works is not the course
+  framing, so the rule was never really about it. **Anywhere other than the
+  bio — the index, a course card, the infrastructure page — naming an
+  institution still means stop and ask first.**
   The lesson worth keeping: **a rule whose reason has expired is still obeyed by
   whoever reads it next.** This one outlived its premise and was only caught
   because it said "ask first" and someone did. When a constraint is written

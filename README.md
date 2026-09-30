@@ -37,9 +37,10 @@ The API token and account ID are the same as for the course projects.
 
 ## Publishing constraint
 
-Public files here must not name an institution, a module code, a term, or a
-scheduled course. Only courses actually in preparation are listed, and without
-dates or links. See `CLAUDE.md`.
+The hub's framing is employer-agnostic: courses are not presented as "courses
+at institution X", and no module codes appear. The About page may name
+Martin's employers, as any bio does. See `CLAUDE.md` for the history of this
+rule.
 
 ## Relation to the other repos
 

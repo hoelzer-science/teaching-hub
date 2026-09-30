@@ -20,13 +20,17 @@ sequencing, pangenomics, the analysis of environmental samples such as
 wastewater, and the study of microbial evolution into bioinformatics for
 genomic surveillance.
 
+Since the winter semester 2026/27, I also hold an interim professorship for
+**Bioinformatics & Digital Health** at the Ernst-Abbe-Hochschule Jena.
+
 ## How I got here
 
 I studied Bioinformatics at the University of Jena (FSU) and stayed for a PhD,
 specialising in **RNA bioinformatics and high-throughput sequencing analysis**.
 I then joined the European Bioinformatics Institute (EMBL-EBI) in Hinxton, UK,
 working in microbiome informatics, before moving to the Robert Koch Institute
-in 2020, where I now lead my team.
+in 2020, where I now lead my team. In 2026 I returned to Jena to teach, alongside
+my work at the RKI.
 
 The through-line is the one this teaching is built around: turning the text
 that sequencing machines produce into biological and clinical answers.
